@@ -4,6 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Credit Card using TailwindCSS">
+        <meta name="theme-color" content="#6366F1">
+
         <!-- TailwindCSS -->
         <link rel="stylesheet" href="/dist/output.css" />
 
@@ -16,70 +19,97 @@
 
         <title>Credit Card App - Home</title>
     </head>
-    <body class="md:px-[30%]">
-        <nav class="px-[4%] py-8">
-            <div class="flex flex-row items-center justify-between">
-                <span class="text-2xl">
-                    <ion-icon name="grid-outline"></ion-icon>
-                </span>
+    <body class="md:bg-indigo-300 ">
+        <div class="w-full max-w-md mx-auto px-[4%] md:my-2 md:bg-white md:rounded-3xl h-screen">
+            <nav class="py-8">
+                <div class="flex flex-row items-center justify-between">
+                    <span class="text-2xl bg-gray-100 p-2 flex rounded-xl items-center cursor-pointer active:bg-indigo-300 active:text-white duration-300 ">
+                        <ion-icon name="grid-outline"></ion-icon>
+                    </span>
 
-                <span class="text-2xl">
-                    <ion-icon name="notifications-outline"></ion-icon>
-                </span>
-            </div>
-        </nav>
+                    <span class="text-2xl disabled:opacity-75">
+                        <ion-icon name="notifications-outline"></ion-icon>
+                    </span>
+                </div>
+            </nav>
 
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="flex flex-col justify-center items-center">
-                        <div class="bg-gradient-to-tr from-blue-300 to-indigo-500 w-[17rem] rounded-2xl overflow-hidden">
-                            <div class="p-8">
-                                <div class="flex flex-row items-start justify-between">
-                                    <div class="text-white">
-                                        <h4 class="text-xs">Remaining credit</h4>
-                                        <h6 class="text-base font-bold my-1">Rp. 2,440,000</h6>
-                                        <h5 class="text-[10px]">Daily credit limit <span class="font-bold">Rp. 100K</span></h5>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="flex flex-col justify-center items-center">
+                            <div class="bg-gradient-to-tr from-blue-300 to-indigo-500 w-[17rem] rounded-2xl">
+                                <div class="p-8">
+                                    <div class="flex flex-row items-start justify-between">
+                                        <div class="text-white">
+                                            <h4 class="text-xs">Remaining credit</h4>
+                                            <h6 class="text-base font-bold my-1">Rp2.440.000</h6>
+                                            <h5 class="text-[10px]">Daily credit limit <span class="font-bold">Rp100.000</span></h5>
+                                        </div>
+                                        <img src="/src/images/visa.svg" alt="" />
                                     </div>
-                                    <img src="/src/images/visa.svg" alt="" />
+                                    <div class="flex items-center justify-between mt-4">
+                                        <div class="text-white">
+                                            <h6 class="text-xs">Rp500.000</h6>
+                                            <h5 class="text-xs">Due in <span class="font-bold">6 Days</span></h5>
+                                        </div>
+                                        <a href="" class="bg-green-400 hover:bg-green-500 duration-300 text-white text-base font-bold py-2 px-2 rounded-xl">Pay Now</a>
+                                    </div>
                                 </div>
-                                <div class="flex items-center justify-between mt-4">
-                                    <div class="text-white">
-                                        <h6 class="text-xs">Rp. 500.000</h6>
-                                        <h5 class="text-xs">Due in <span class="font-bold">6 Days</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col justify-center items-center">
+                            <div class="bg-gradient-to-tr from-indigo-400 to-purple-500 w-[17rem] rounded-2xl">
+                                <div class="p-8">
+                                    <div class="flex flex-row items-start justify-between">
+                                        <div class="text-white">
+                                            <h4 class="text-xs">Remaining credit</h4>
+                                            <h6 class="text-base font-bold my-1">Rp. 2,440,000</h6>
+                                            <h5 class="text-[10px]">Daily credit limit <span class="font-bold">Rp. 100K</span></h5>
+                                        </div>
+                                        <img src="/src/images/visa.svg" alt="" />
                                     </div>
-                                    <a href="" class="bg-green-400 hover:bg-green-500 duration-300 text-white text-base font-bold py-2 px-2 rounded-xl">Pay Now</a>
+                                    <div class="flex items-center justify-between mt-4">
+                                        <div class="text-white">
+                                            <h6 class="text-xs">Rp. 500.000</h6>
+                                            <h5 class="text-xs">Due in <span class="font-bold">6 Days</span></h5>
+                                        </div>
+                                        <a href="" class="bg-green-400 hover:bg-green-500 duration-300 text-white text-base font-bold py-2 px-2 rounded-xl">Pay Now</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="flex flex-col justify-center items-center">
-                        <div class="bg-gradient-to-tr from-indigo-400 to-purple-500 w-[17rem] rounded-2xl overflow-hidden">
-                            <div class="p-8">
-                                <div class="flex flex-row items-start justify-between">
-                                    <div class="text-white">
-                                        <h4 class="text-xs">Remaining credit</h4>
-                                        <h6 class="text-base font-bold my-1">Rp. 2,440,000</h6>
-                                        <h5 class="text-[10px]">Daily credit limit <span class="font-bold">Rp. 100K</span></h5>
-                                    </div>
-                                    <img src="/src/images/visa.svg" alt="" />
-                                </div>
-                                <div class="flex items-center justify-between mt-4">
-                                    <div class="text-white">
-                                        <h6 class="text-xs">Rp. 500.000</h6>
-                                        <h5 class="text-xs">Due in <span class="font-bold">6 Days</span></h5>
-                                    </div>
-                                    <a href="" class="bg-green-400 hover:bg-green-500 duration-300 text-white text-base font-bold py-2 px-2 rounded-xl">Pay Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                <!-- <div class="swiper-pagination"></div> -->
             </div>
 
-            <!-- <div class="swiper-pagination"></div> -->
+            <div class="mt-8">
+                <h3 class="text-xl">Recent Transaction</h3>
+
+                <div class="flex justify-center mt-7">
+
+                    <div class="flex  gap-4">
+                        <span class="text-[32px] flex items-center justify-center bg-gray-100 p-2 rounded-xl">
+                            <ion-icon name="car-outline"></ion-icon>
+                        </span>
+
+                        <div class="flex gap-20 sm:gap-36 items-center">
+                            <div class="">
+                                <h4 class="text-xs text-black">Cab to home</h4>
+                                <p class="text-xs text-gray-400">GRAB</p>
+                            </div>
+                            <a href="" class="bg-green-400 hover:bg-green-500 duration-300 text-white text-base font-bold py-2 px-2 rounded-xl">Pay Now</a>
+                        </div>
+                        
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
         </div>
 
         <!--SwiperJS -->
