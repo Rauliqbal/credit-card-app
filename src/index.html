@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- TailwindCSS -->
+        <link rel="stylesheet" href="/dist/output.css" />
+
+        <!-- SwiperJS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+        <title>Credit Card App</title>
+    </head>
+    <body class="md:px-[30%]">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="flex flex-col justify-center h-screen">
+                        <img class="px-5" src="/src/images/ilustration1.png" alt="" />
+
+                        <div class="text-center px-10 mt-8">
+                            <h2 class="text-2xl font-bold">Pay Your Way</h2>
+                            <p class="text-base text-slate-600 mt-8">India’s 1st Mobile Credit Card with UPI payment. Pay by QR, Pay Online, Pay by Mastercard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col justify-center h-screen">
+                        <img class="px-5" src="/src/images/ilustration2.png" alt="" />
+
+                        <div class="text-center px-10 mt-8">
+                            <h2 class="text-2xl font-bold">No-stress Loans</h2>
+                            <p class="text-base text-slate-600 my-8">Bespoke credit programs to suit your needs, 0% interest for 30 days and EMI conversions starting at 13%</p>
+                            <a href="/src/home.html" class="bg-indigo-500 text-white hover:bg-indigo-600 focus:outline-none focus:ring focus:ring-indigo-300 duration-300 py-2 px-6 rounded-full">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination mb-8"></div>
+        </div>
+
+        <!--SwiperJS -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="/src/js/script.js"></script>
+    </body>
+</html>
